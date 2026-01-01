@@ -394,8 +394,10 @@ java -cp "target/classes;lib/mysql-connector-j-8.0.33.jar" com.mycompany.hardwar
 > **Note**: Add your screenshots to the `preview/` folder and update the paths below.
 
 #### Product Management Interface
-![Product Management](preview/product-management.png)
+![Product Management](HardwareStoreDBMS/preview/product-management.png)
 *Modern card-based layout with search functionality and real-time validation*
+
+> **Note**: More screenshots can be added to the `HardwareStoreDBMS/preview/` folder.
 
 
 
@@ -427,11 +429,7 @@ HardwareStoreDBMS/
 │   └── mysql-connector-j-8.0.33.jar    # MySQL JDBC Driver
 │
 ├── preview/                             # Screenshots folder
-│   ├── product-management.png
-│   ├── customer-management.png
-│   ├── order-management.png
-│   ├── stock-management.png
-│   └── supplier-management.png
+│   └── product-management.png.png
 │
 ├── target/                              # Compiled classes
 │   └── classes/
