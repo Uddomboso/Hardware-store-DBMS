@@ -56,7 +56,7 @@ Before you begin, ensure you have the following installed:
 
 1. Download MySQL Server from the [official website](https://dev.mysql.com/downloads/mysql/)
 2. Run the installer and follow the setup wizard
-3. **Important**: During installation, set the root password to: `29102001`
+3. **Important**: During installation, set the root password to: `12345678`
    - If you prefer a different password, you'll need to update the connection credentials in the Java source files
 
 ### Step 2: Start MySQL Service
@@ -86,7 +86,7 @@ Open MySQL Command Line Client or MySQL Workbench and run:
 ```sql
 -- Connect to MySQL as root
 mysql -u root -p
--- Enter password: 29102001
+-- Enter password: 12345678
 
 -- Create the database
 CREATE DATABASE IF NOT EXISTS hardwaredb;
@@ -239,7 +239,7 @@ cd Hardware-store-DBMS/HardwareStoreDBMS
    DB_PASSWORD=your_password_here
    ```
 
-   > **Note**: If `.env` file doesn't exist, the application will use default values (password: `29102001`). However, it's recommended to create the `.env` file for security.
+   > **Note**: If `.env` file doesn't exist, the application will use default values (password: `12345678`). However, it's recommended to create the `.env` file for security.
 
 ### Download MySQL Connector
 
@@ -391,13 +391,11 @@ java -cp "target/classes;lib/mysql-connector-j-8.0.33.jar" com.mycompany.hardwar
 
 ### Application Interface Preview
 
-> **Note**: Add your screenshots to the `preview/` folder and update the paths below.
-
 #### Product Management Interface
 ![Product Management](HardwareStoreDBMS/preview/product-management.png)
 *Modern card-based layout with search functionality and real-time validation*
 
-> **Note**: More screenshots can be added to the `HardwareStoreDBMS/preview/` folder.
+> **Note**: other menues look similar.
 
 
 
