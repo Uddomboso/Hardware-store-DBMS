@@ -1,0 +1,30 @@
+# Environment variables
+.env
+
+# Compiled class files
+*.class
+target/
+bin/
+out/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Maven
+.mvn/
+
+# Backup files
+*.bak
+*.backup

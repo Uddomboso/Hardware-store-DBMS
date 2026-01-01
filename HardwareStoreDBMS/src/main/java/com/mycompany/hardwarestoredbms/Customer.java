@@ -23,7 +23,12 @@ public class Customer {
 
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/hardwaredb", "root", "29102001");
+        Config.load();
+        return DriverManager.getConnection(
+            Config.getDbUrl(), 
+            Config.getDbUser(), 
+            Config.getDbPassword()
+        );
     }
 
     public void setCustomerID(int customerID) { this.customerID = customerID; }

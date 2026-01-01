@@ -15,9 +15,10 @@ public class HardwareStoreDBMS {
         Scanner sc = new Scanner(System.in);
         boolean running = true;
 
-        String url = "jdbc:mysql://localhost:3306/hardwaredb";
-        String user = "root";
-        String password = "29102001";
+        Config.load();
+        String url = Config.getDbUrl();
+        String user = Config.getDbUser();
+        String password = Config.getDbPassword();
 
         try (Connection conn = DriverManager.getConnection(url, user, password)) {
             System.out.println("Connected to the Hardware Store database!");
